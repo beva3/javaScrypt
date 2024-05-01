@@ -80,4 +80,4 @@ console.log(varGlobal);
 // array
 var fruit = ["pomme","goavy","orange","mangue"];
 console.log(fruit);
-console.log(fruit[2]);
+console.log(fruit[1]);
