@@ -23,6 +23,9 @@ console.log(hello("raphael"));
 let add = function(n1,n2){
     return n1 + n2;
 }
+let salut = () => console.log("salut !!!");;
 
 console.log(add(1,10));
 console.log(add);
+console.log(salut);
+salut();
