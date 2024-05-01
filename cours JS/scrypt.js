@@ -27,3 +27,20 @@ console.log(Name + "==>"+Name.length);
  var numStr = "123";
  console.log(numStr);
  console.log(parseInt(numStr)); // to number
+ /**
+  * conditiona :
+  * if(condition){
+  *     // code
+  * }else if(){
+  *     // code
+  * }else{
+  *     // code
+  * }
+  */
+ /**
+  * switch(condition){
+  *     case VALUE:
+  *         break;
+  *     default:
+  * }
+  */
