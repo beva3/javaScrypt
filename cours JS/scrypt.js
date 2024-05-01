@@ -64,6 +64,15 @@ for (var i=0; i<10; i++) {
 */
 
 // fonction
+/*
 function sum(n1, n2) {
-    
+    varGlobal ="je suis var global";
+    return n1 + n2;
 }
+function multiply(n1, n2) {
+    return n1 * n2;
+}
+console.log(sum(3,4));
+console.log(multiply(3,4));
+console.log(varGlobal);
+*/
