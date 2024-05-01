@@ -76,3 +76,8 @@ console.log(sum(3,4));
 console.log(multiply(3,4));
 console.log(varGlobal);
 */
+
+// array
+var fruit = ["pomme","goavy","orange","mangue"];
+console.log(fruit);
+console.log(fruit[2]);
