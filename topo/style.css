@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./istockphoto-1394391975-1024x1024.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.box1{
+    border: 1px solid #000000;
+    width: 400px;
+    height: 400px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 10px 20px 10px;
+    font-weight: bold;
+    overflow: auto;
+    backdrop-filter: blur(2px);
+}
+.box1 h1{
+    color: aqua;
+    text-align: center;
+    margin: 20px;
+}
