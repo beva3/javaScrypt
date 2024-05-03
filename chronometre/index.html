@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chronomrtre</title>
+</head>
+<body>
+    <header>
+        <h1 id="Horloge">
+            12:00:45
+        </h1>
+        <style>
+            body{
+                color: red;
+                background-color: black;
+            }
+            header{
+                height: 720px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header h1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 8em;
+            }
+        </style>
+        <script>
+            function Horloge(){
+                let time = new Date();
+                let h = time.getHours();
+                let min = time.getMinutes();
+                let s = time.getSeconds();
+                
+                // string date format
+                if(h < 10)
+                    h = '0' + h;
+                if(min < 10)
+                    min = '0' + min;
+                if(s < 10)
+                    s = '0' + s;
+                let hours_Now = h + ':' + min + ':' + s;
+                
+                // liaison avec html
+                document.getElementById("Horloge").textContent = hours_Now;           
+                 setInterval("Horloge()",1000);    
+            }
+            document.body.onload = Horloge();
+            // display console
+            console.log(time,h,min,s);
+            console.log(hours_Now);
+
+
+        </script>
+    </header>
+</body>
+</html>
