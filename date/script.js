@@ -15,5 +15,7 @@ function time_display(){
     let s = t_Now.getSeconds();
 
     document.getElementsByClassName("h").textContent = h;
+    console.log( 'okokok' + document.getElementsByClassName("h").textContent);
 }
-time_display();
+document.body.onload = time_display();
+//time_display();
