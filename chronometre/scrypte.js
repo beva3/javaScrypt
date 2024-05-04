@@ -17,7 +17,7 @@ function Horloge(){
     document.getElementById("Horloge").textContent = hours_Now;           
     setInterval("Horloge()",1000);    
     // display console
-console.log(time,h,min,s);
-console.log(hours_Now);
+    console.log(time,h,min,s);
+    console.log(hours_Now);
 }
 document.body.onload = Horloge();
