@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url('./raphael2.jpg') ;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 1px solid rgb(12, 207, 12);
+    width:70vw;
+    border-radius: 20px;
+    background-color: rgba(4, 89, 247, 0.219);
+    box-shadow: 8px 20px 20px 8px rgba(22, 199, 184, 0.568);
+}
+.div-set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 10px 40px 10px;
+    
+    div{
+        margin: 0 20px 0 20px;
+        input,select{
+            height: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border:none;
+        }
+        select{
+            padding: 0 10px;
+        }
+    }
+}
+#div-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
+    margin: 30px;
+
+    p{
+        color: rgb(247, 245, 248);
+    }
+}
