@@ -78,7 +78,7 @@
         </div>
         <div class="controls">
             <button id="start" onclick="start()">Start</button>
-            <button id="stop" onclick="stop()">Stop</button>
+            <button id="stop" onclick="_stop()">Stop</button>
             <button id="reset" onclick="reset()">Reset</button>
         </div>
     </div>
@@ -122,7 +122,7 @@
             btn_start.disabled = true;
         }
         // mettre en place le bouton du stop
-        function stop(){
+        function _stop(){
             clearInterval(t);
             btn_start.disabled = false;
         }
