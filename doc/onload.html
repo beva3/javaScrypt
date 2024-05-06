@@ -6,19 +6,21 @@
     <title>onload</title>
     <script>
         function my_test() {
-            let title = document.querySelector('title');
-            let content_Title = document.querySelector('title').textContent;
-            let content_Title1 = document.querySelector('title').innerHTML;
-            console.log(title);
-            console.log(content_Title);
-            console.log(content_Title1);
-
+            //let title = document.querySelector('title');
+            //let content_Title = document.querySelector('title').textContent;
+            //let content_Title1 = document.querySelector('title').innerHTML;
+            //console.log(title);
+            //console.log(content_Title);
+            //console.log(content_Title1);
             //alert("hello!")
+            let text_value = document.getElementById('test')
+            console.log(text_value)
+            text_value.select()
         }
-        window.onload = my_test()
+        //window.onload = my_test()
     </script>
 </head>
-<body >
-    
+<body onload="my_test()">
+    <input type="text" name="test" id="test" value="rakoto">
 </body>
 </html>
