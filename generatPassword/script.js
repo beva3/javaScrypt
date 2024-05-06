@@ -1,7 +1,16 @@
 let copyBtn = document.getElementById('copy')
 
 function getPassword(){
-    let password = 'this is a password'
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+=`{}[]|:;?<>'
+    let pswdLength = 16;
+    let password = ''
+
+    // generate password
+
+    for (let i = 0; i < pswdLength ; i++) {
+        let nbr = Math.floor(Math.random() * chars.length)
+        password += chars.substring(nbr, nbr + 1)            
+    }
 
     // print the password
     document.getElementById('password').value = password
