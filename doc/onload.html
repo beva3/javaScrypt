@@ -6,12 +6,19 @@
     <title>onload</title>
     <script>
         function my_test() {
-            alert("hello!")
+            let title = document.querySelector('title');
+            let content_Title = document.querySelector('title').textContent;
+            let content_Title1 = document.querySelector('title').innerHTML;
+            console.log(title);
+            console.log(content_Title);
+            console.log(content_Title1);
+
+            //alert("hello!")
         }
         window.onload = my_test()
     </script>
 </head>
-<body>
+<body >
     
 </body>
 </html>
