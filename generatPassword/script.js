@@ -8,8 +8,8 @@ function getPassword(){
     // generate password
 
     for (let i = 0; i < pswdLength ; i++) {
-        let nbr = Math.floor(Math.random() * chars.length)
-        password += chars.substring(nbr, nbr + 1)            
+        let nbrRandom = Math.floor(Math.random() * chars.length)
+        password += chars.substring(nbrRandom, nbrRandom + 1)            
     }
 
     // print the password
@@ -24,14 +24,20 @@ function copyPassword(){
     let inputPassword = document.getElementById('password')
     //console.log(inputPassword);
     //alert('copy password')
-    // copy password
-    inputPassword.select()
-    document.execCommand('copy');
+    
+    //verify password
+    if(inputPassword.value.length ==16){
+        // copy password
+        inputPassword.select()
+        document.execCommand('copy');
 
-    // print signature
-    copyBtn.style.background='transparent'
-    copyBtn.style.color='rgb(59, 52, 52)'
-
+        // print signature
+        copyBtn.style.background='transparent'
+        copyBtn.style.color='rgb(59, 52, 52)'
+    }else{
+        alert('generate again')
+    }
+    
     /**
      * et maintenant il y a une probem, apres la copy, il y a encore le reset
      */
