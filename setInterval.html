@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set intervalle</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="index">2</h1>
+    <script>
+        // je veux changes la valeur du var idex a chaque second
+        let index = 0;
+        function getINdex(){
+            let time = new Date();
+            let s =time.getSeconds();
+
+            index = s % 60;
+            document.querySelector('#index').textContent = index;
+            setInterval(getINdex,1000);
+            return index;
+            
+        }
+        getINdex();
+        //document.querySelector('#index').textContent = getINdex();
+    </script>
+</body>
+</html>
