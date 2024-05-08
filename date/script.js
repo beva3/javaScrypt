@@ -45,6 +45,8 @@ function time_display(){
     if(s <10) s = '0'+s;
     if(dt <10) dt= '0'+dt;
 
+    setInterval(time_display,1000)
+
     // document.getElementsByClassName("h").textContent = h; !!!! fa maninona
 
     document.querySelector('.h').textContent = h;
@@ -54,6 +56,7 @@ function time_display(){
     document.querySelector('.dt').textContent = dt;         //
     document.querySelector('.month').textContent = MONTH[month -1];   //console.log(MONTH[month -1]) // entier, faire l'adaptation apres
     document.querySelector('.year').textContent = year;     //
+    //setInterval(time_display,1000)
 }
 
 document.body.onload = time_display();
