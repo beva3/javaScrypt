@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*position: absolute;*/
+        }
+        #square{
+            width: 100px;
+            height: 100px;
+            top :0;
+            left: 0;
+            background: black;
+            position: relative;
+            /*animation: fadeIn 2s infinite;*/
+            animation: rotater 10s linear;
+        }
+
+        /*annimation*/
+        @keyframes fadeIn{
+            0%{opacity: 0;}
+            50%{background: rgb(92, 24, 24);}
+            100%{opacity: 1;}
+        }
+
+        @keyframes rotater{
+            0%{
+                top:0;
+                left: 0;
+            }
+            25%{
+                top:0;
+                left: 100px;
+            }
+            50%{
+                top:200px;
+                left: 0px;
+            }
+            75%{
+                top:0;
+                left: 0px;
+            }
+            100%{
+                top:0px;
+                left: 0px;
+            }
+        }
+    </style>
+    <title>key frame</title>
+</head>
+<body>
+    <div id="square"></div>
+</body>
+</html>

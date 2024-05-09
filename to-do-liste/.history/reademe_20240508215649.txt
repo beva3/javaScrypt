@@ -1,0 +1,9 @@
+1- comment foctionne getElementById() ok
+2- lier JS et HTML avec onclick
+3-  create a new elemet whith < creatElement() >
+    add a new element whith < add()>
+    concat or complet whith 
+    delete a new element whith < remove()>
+4- change the content of the text in the balise 
+    whith balise.innerHTML = value
+5- get value whith ID : id.value

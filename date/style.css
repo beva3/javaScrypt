@@ -58,7 +58,7 @@ main {
     .h{background: rgba(42, 42, 187, 0.575);}
     .min{background: rgba(24, 87, 5, 0.575);}
     .sec{background: rgba(179, 12, 115, 0.575);}
-}
+} 
 .content .date{
     /* border: 1px solid black; */
     display: flex;

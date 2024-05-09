@@ -1,4 +1,3 @@
-let t_Now = new Date();
 const WEEK ={
     '0':'Sunday',
     '1':'Monday',
@@ -22,17 +21,8 @@ const MONTH={
     '10':'November',
     '11':'December'
 };
-function display_console(){
-    console.log(t_Now);
-    console.log('====== time ======');
-    console.log(`${t_Now.getHours()}:${t_Now.getMinutes()}:${t_Now.getSeconds()}`);
-    console.log('====== day ======');
-    console.log(`${t_Now.getMonth()}`);
-    console.log(`${t_Now.getSeconds()/1000}`);
-}
-display_console();
-
 function time_display(){
+    let t_Now = new Date();
     let h = t_Now.getHours();
     let m = t_Now.getMinutes();
     let s = t_Now.getSeconds();
@@ -45,8 +35,6 @@ function time_display(){
     if(s <10) s = '0'+s;
     if(dt <10) dt= '0'+dt;
 
-    setInterval(time_display,1000)
-
     // document.getElementsByClassName("h").textContent = h; !!!! fa maninona
 
     document.querySelector('.h').textContent = h;
@@ -56,7 +44,7 @@ function time_display(){
     document.querySelector('.dt').textContent = dt;         //
     document.querySelector('.month').textContent = MONTH[month -1];   //console.log(MONTH[month -1]) // entier, faire l'adaptation apres
     document.querySelector('.year').textContent = year;     //
-    //setInterval(time_display,1000)
+    setInterval("time_display()",1000);
 }
 
 document.body.onload = time_display();

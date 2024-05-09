@@ -1,0 +1,2 @@
+1- comment foctionne getElementById() ok
+2- lier J

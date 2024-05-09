@@ -1,0 +1,3 @@
+1- comment foctionne getElementById() ok
+2- lier JS et HTML avec onclick
+3- create a new elemet whith < creatElement>

@@ -2,6 +2,7 @@ let copyBtn = document.getElementById('copy')
 
 function getPassword(){
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+=`{}[]|:;?<>'
+    //const chars ='01'
     let pswdLength = 16;
     let password = ''
 
