@@ -1,0 +1,4 @@
+1) comprendre setInterval
+2) comprendre getelementById
+3) comprendre getelementById('myId').value
+4) comprendre  Math.floor(Math.random()*49); nombre pseudo aleatoir inf a 49
