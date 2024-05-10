@@ -11,11 +11,11 @@ let olona = {
 }
 
 function property(Object){
-    for(let property in Object){
+    for(let tproperty in Object){
         console.log('================================');
-        console.log(` property   : ${property}`);
-        console.log(` typeof     : ${typeof(Object[property])}`);
-        console.log(` valeur     : ${Object[property]}`);
+        console.log(` property   : ${tproperty}`);
+        console.log(` typeof     : ${typeof(Object[tproperty])}`);
+        console.log(` valeur     : $`);
         console.log('--------------------------------');
     }
 }

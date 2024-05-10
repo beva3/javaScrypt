@@ -15,7 +15,7 @@ function property(Object){
         console.log('================================');
         console.log(` property   : ${property}`);
         console.log(` typeof     : ${typeof(Object[property])}`);
-        console.log(` valeur     : ${Object[property]}`);
+        console.log(` valeur     : ${Object.property}`);
         console.log('--------------------------------');
     }
 }
