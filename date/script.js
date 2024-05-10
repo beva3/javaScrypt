@@ -44,8 +44,8 @@ function time_display(){
     document.querySelector('.dt').textContent = dt;         //
     document.querySelector('.month').textContent = MONTH[month -1];   //console.log(MONTH[month -1]) // entier, faire l'adaptation apres
     document.querySelector('.year').textContent = year;     //
-    setInterval("time_display()",1000);
+    //setInterval("time_display()",1000);
 }
-
+setInterval("time_display()",1000); // mety reto
 document.body.onload = time_display();
 //time_display();
