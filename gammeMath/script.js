@@ -24,7 +24,8 @@ function verifier(){
     var res = document.querySelector('.res').value;
     console.log(res);
     if(random1 + random2 == res){
-        Message.style.backgroundColor ="green";
+        Message.style.display = "contents";
+        Message.style.backgroundColor ="blue";
         Message.innerHTML ="Correct";
     }
     else{
