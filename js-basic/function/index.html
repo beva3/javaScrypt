@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonction</title>
+    <script>
+        /*type 1*/
+        function canDrive(age,pays){
+            if(
+                (age >18 && pays == 'FR') ||
+                (age >16 && pays == 'EN')
+            ){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        console.log(canDrive(23,'FR'));
+        console.log(canDrive(17,'EN'));
+
+        /*type  2*/
+        const hello = function (){
+            console.log('hello world je suis un fonction');
+        }
+        hello();
+
+        /*type 3*/
+        let add = (a,b) => a+b;
+        console.log(add(3,4))
+
+        /*other*/
+        var note = [12,13,19,8,4]
+        console.log(note);
+        console.log("Length : ",note.length)
+        
+        /*type 4 remaruqe*/
+        function maFunction(){
+            console.log(this);  /*global : this : ito*/
+        }
+        //maFunction();
+
+        const a = {
+            firstname : "John",
+            lastname : "Doe",
+            fullname : function (){
+                console.log(this);
+            }
+        }
+        a.fullname();   /*this : ito,afiche the object a*/
+        /*type 5*/
+        const isPair = (a) => a%2 === 0;
+        console.log(isPair(3));
+    </script>
+</head>
+<body>
+    <header>
+        <h1>The function</h1>
+    </header>
+    <main>
+        <h1>function</h1>
+    </main>
+    <footer>
+        <h6>the function</h6>
+    </footer>
+</body>
+</html>
