@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editor</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <button id="open">Open</button>
-            <button id="new">New</button>
+            <button id="open">Open file</button>
+            <button id="new">New file</button>
             <button id="save">Save</button>
         </header>
 
-        <textarea id="editor"></textarea>
+        <textarea id="editor" placeholder="Type your text ..."></textarea>
         
         <footer>
-            <select></select>
-            <button id="translate">Translate</button>
+            <select>
+                <option value="none">Choice Languge</option>
+                <option value="en">Anglais</option>
+                <option value="fr">Francais</option>
+                <option value="es">Espagnol</option>
+                <option value="de">Allemand</option>
+                <option value="it">Italien</option>
+                <option value="pt">Portugais</option>
+            </select>
+            <button id="translate">listen</button>
         </footer>
-        
+
     </div>
 </body>
 </html>
