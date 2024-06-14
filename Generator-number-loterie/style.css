@@ -77,5 +77,9 @@ input{
         color: white;
         text-transform: capitalize;
         letter-spacing: 1px;
+        transition: 0.5s;
+    }
+    button:hover{
+        box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
     }
 }
