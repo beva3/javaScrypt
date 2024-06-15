@@ -89,3 +89,8 @@ footer{
 button:hover{
     transform: scale(1.09);
 }
+.text-align{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:1rem;
+}

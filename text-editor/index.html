@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./scipt.js" defer></script>
     <title>Editor</title>
 </head>
@@ -12,15 +13,25 @@
         <header>
             <button id="open">Open file</button>
             <button id="new">New file</button>
-            <button id="save">Save</button>
+            <div class="text-align">
+                <button id="left"><i class="fas fa-align-left"></i></button>
+                <button id="center"><i class="fas fa-align-center"></i></button>
+                <button id="right"><i class="fas fa-align-right"></i></button>
+                <button id="justify"><i class="fas fa-align-justify"></i></button>
+            </div>
         </header>
 
         <textarea id="editor" placeholder="Type your text ..."></textarea>
         
         <footer>
             <select>
+                <option value="">None</option>
+                <option value="">None</option>
+                <option value="">None</option>
+                <option value="">None</option>
+                <option value="">None</option>
             </select>
-            <button id="btn_listen">listen</button>
+            <button id="btn_save">Save</button>
         </footer>
     </div>
 </body>

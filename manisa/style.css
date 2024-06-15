@@ -15,11 +15,11 @@ body{
     justify-content: center;
 }
 .box{
-    border: 1px solid rgb(12, 207, 12);
-    width:70vw;
-    border-radius: 20px;
+    width:50vw;
+    border-radius: 9px;
     background-color: rgba(4, 89, 247, 0.219);
-    box-shadow: 8px 20px 20px 8px rgba(22, 199, 184, 0.568);
+    box-shadow: 0 0 10px rgb(11 15 11);
+    background: linear-gradient(45deg,#0078ffa8,#588000de);
 }
 .div-set{
     display: flex;
@@ -31,10 +31,16 @@ body{
     div{
         margin: 0 20px 0 20px;
         input,select{
+            box-shadow: 0 0 10px rgb(11 15 11);
             height: 40px;
-            border-radius: 20px;
+            border-radius: 9px;
             text-align: center;
             border:none;
+            border:none;
+            outline:none;
+        }
+        input{
+            padding-right:1rem;
         }
         select{
             padding: 0 10px;
@@ -45,10 +51,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid black;*/
+    border: 1px solid #4d49494a;
     margin: 30px;
+
+    height:5rem;
+    border-radius:5px;
+    box-shadow:0 0 9px rgb(11 15 11 / 77%);
+    background:linear-gradient(60deg,#2d9906fa,#2903ccba);
+
+    box-shadow:0 0 9px rgb(213 225 230);
+    background:linear-gradient(120deg,#2ae913bd,#013377);
 
     p{
         color: rgb(247, 245, 248);
+        /* border: 1px solid black; */
+        width:100%;
+        text-align:center;
     }
 }
