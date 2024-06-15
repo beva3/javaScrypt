@@ -18,6 +18,7 @@ for (let i = 0; i < text_align.length; i++) {
     btns_text[i].addEventListener('click', ()=>{
         // console.log(text_align[i]);
         text_area.style.textAlign = text_align[i];
+        text_area.placeholder =text_align[i];
     });
 
 }
